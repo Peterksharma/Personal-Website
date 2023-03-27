@@ -1,0 +1,223 @@
+:root {
+    --light1: rgb(7, 125, 164) ;
+    --light2: grey ;
+    --dark1: darkblue;
+    --dark2: darkgrey;
+
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /*  -Justify-content will adjust the space between the h1 and links in the header */
+    align-items: end; /* will adjust the links on the x axis */
+    padding: 10px;
+    background-color: black;
+    height: 75px;
+}
+
+/* changes the color of the links in the header */
+header ul li a {
+    color: var(--light1);
+}
+
+h1 {
+    margin: 0; /*  */
+    text-align: left; /* will align Peter Sharma in the Header left */
+    font-size: 40px; /*  */
+    color: black; /*  will change the color for Peter Sharma in the header */
+    height: 45px; /*  will adjust Peter Sharma in the header */
+    background: var(--light1); /* Box behind name in the header  */
+    padding: 10px; /*   */
+}
+
+.header-links ul {
+    list-style: none; /* removes the bullet points of the links*/
+    margin: 0;
+    padding: 0;
+    display: flex; /*f lex, makes the links side by side instead of stacking*/
+    justify-content: flex-end;
+    font-family:sans-serif ;
+    font-size: 22px; /* sets the font size of the links in the header*/
+}
+
+.header-links li {
+    margin-left: 10px;  /* Will adjust the spacing between the links in the header.  */
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+.banner-under-header {
+    position: relative; /* Add this to allow for absolute positioning */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(./images/banner-under-header-background.jpg);
+    height: 150px; /*Changes the size of the banner under the header*/
+    padding-right: 5%;  /*Will move the text on the banner under the headder away from the right side of the page  */
+    border-bottom: solid 40px white;
+    color: var(--light1);
+  }
+  
+
+
+/* _________________________________________ */
+
+
+h3{
+    margin:0;
+    color: var(--light1);
+  }
+  section{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  section h3{
+    flex: 1 1;
+    padding:0 2rem;
+    font-size: 40px;
+    text-align:right;
+    min-width:max-content;
+    align-self:center;
+  }
+  .content{
+    flex: 2 1;
+    padding: 1rem;
+    min-width:300px;
+    border-left: 4px solid rgb(14, 37, 94);
+  }
+
+
+
+  .work-projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project1 {
+    color:rgb(255, 0, 200);
+    background-color: black;
+    border: solid 5px yellow;
+    height: 150px;
+    padding: 10px;
+    width: 90%
+    
+  }
+
+  .project1:hover {
+    opacity: 50%;  /*make project one change opacity */
+    border: solid 5px red;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    color:rgb(255, 0, 200);
+    background-color: black;
+    border: solid 5px yellow;
+    height: 150px;
+    padding: 10px;
+    width: 45%;
+  }
+
+  .work-projects p {
+    color:yellow;
+
+  }
+
+  h4 {
+    background-color: bisque;
+    width: 130px;
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+
+  .project2:hover,
+  .project3:hover,
+  .project4:hover,
+  .project5:hover {
+    opacity: 50%;  /*make project one change opacity */
+    border: solid 5px red;
+  }
+
+  .content a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blueviolet;
+    border-bottom: solid 3px black;
+    margin-right: 10%;
+
+  }
+  
+  
+  /* Styles for screens smaller than 768px */
+  @media screen and (max-width: 767px) {
+    header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .header-links{
+    padding: 2%;
+  }
+    body {
+      font-size: 10 px;
+    }
+
+    h3{
+    margin:0;
+    color: var(--dark2);
+    justify-content: space-around;
+    background-color: black;
+  }
+  section{
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  section h3{
+    font-size: 40px;
+    text-align:center;
+    min-width:max-content;
+    align-self:center;
+  }
+  .content{
+    flex: 2 1;
+    padding: 1rem;
+    min-width:300px;
+    border-left: none;
+  }
+
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    color:rgb(255, 0, 200);
+    background-color: black;
+    border: solid 5px yellow;
+    height: 150px;
+    padding: 10px;
+    width: 94%;
+  }
+  
+  }
+
+  
+  
