@@ -16,8 +16,9 @@ header {
     justify-content: space-between; /*  -Justify-content will adjust the space between the h1 and links in the header */
     align-items: end; /* will adjust the links on the x axis */
     padding: 10px;
-    background-color: black;
-    height: 75px;
+    padding-bottom: 50px;
+    background-image: url(./images/under-banner-background.jpeg);
+    height: 125px;
 }
 
 /* changes the color of the links in the header */
@@ -58,8 +59,8 @@ li:first-child {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url(./images/banner-under-header-background.jpg);
-    height: 150px; /*Changes the size of the banner under the header*/
+    background-color: black;
+    height: 55px; /*Changes the size of the banner under the header*/
     padding-right: 5%;  /*Will move the text on the banner under the headder away from the right side of the page  */
     border-bottom: solid 40px white;
     color: var(--light1);
@@ -89,7 +90,7 @@ h3{
   }
   .content{
     flex: 2 1;
-    padding: 1rem;
+    padding: 1%;
     min-width:300px;
     border-left: 4px solid rgb(14, 37, 94);
   }
@@ -103,13 +104,13 @@ h3{
   
   .project1 {
     color:rgb(255, 0, 200);
-    background-color: black;
+    background-image: url("./images/Cooking.jpeg");
     border: solid 5px yellow;
     height: 150px;
-    padding: 10px;
-    width: 90%
+    width: 97.3%
     
   }
+  
 
   .project1:hover {
     opacity: 50%;  /*make project one change opacity */
@@ -122,6 +123,22 @@ h3{
     width: 100%;
   }
 
+  .project2 {
+    background-image: url(./images/work1.jpg);
+  }
+
+  .project3 {
+    background-image: url(./images/work2.jpg);
+  }
+
+  .project4 {
+    background-image: url(./images/work3.jpg);
+  }
+
+  .project5 {
+    background-image: url(./images/work4.jpg);
+  }
+
   .project2,
   .project3,
   .project4,
@@ -130,8 +147,7 @@ h3{
     background-color: black;
     border: solid 5px yellow;
     height: 150px;
-    padding: 10px;
-    width: 45%;
+    width: 48%;
   }
 
   .work-projects p {
@@ -165,7 +181,7 @@ h3{
   
   
   /* Styles for screens smaller than 768px */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 863px) {
     header {
     flex-direction: column;
     justify-content: center;
