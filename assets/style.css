@@ -95,7 +95,10 @@ h3{
     border-left: 4px solid rgb(14, 37, 94);
   }
 
-
+  .content img {
+    height: 400px;
+    width: auto;
+  }
 
   .work-projects {
     display: flex;
