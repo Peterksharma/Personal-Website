@@ -1,186 +1,187 @@
 :root {
-    --light1: rgb(7, 125, 164) ;
-    --light2: grey ;
-    --dark1: darkblue;
-    --dark2: darkgrey;
+  --light1: rgb(7, 125, 164) ;
+  --light2: grey ;
+  --dark1: darkblue;
+  --dark2: darkgrey;
+}
 
+.banner-under-header {
+  position: relative; /*Add this to allow for absolute positioning */
+  display: flex;
+  justify-content: flex-end;
 
+  align-items: flex-end;
+  background-color: black;
+  height: 55px; /*Changes the size of the banner under the header*/
+  padding-right: 5%;  /*Will move the text on the banner under the headder away from the right side of the page  */
+  border-bottom: solid 40px white;
+  color: var(--light1);
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between; /*  -Justify-content will adjust the space between the h1 and links in the header */
-    align-items: end; /* will adjust the links on the x axis */
-    padding: 10px;
-    padding-bottom: 50px;
-    background-image: url(./images/under-banner-background.jpeg);
-    height: 125px;
-}
-
-/* changes the color of the links in the header */
-header ul li a {
-    color: var(--light1);
-}
-
 h1 {
-    margin: 0; /*  */
-    text-align: left; /* will align Peter Sharma in the Header left */
-    font-size: 40px; /*  */
-    color: black; /*  will change the color for Peter Sharma in the header */
-    height: 45px; /*  will adjust Peter Sharma in the header */
-    background: var(--light1); /* Box behind name in the header  */
-    padding: 10px; /*   */
+  margin: 0; 
+  text-align: left; /* will align Peter Sharma in the Header left */
+  font-size: 40px; 
+  color: black; /*  will change the color for Peter Sharma in the header */
+  height: 45px; /*  will adjust Peter Sharma in the header */
+  background: var(--light1); /* Box behind name in the header  */
+  padding: 10px; 
+}
+
+header {
+  justify-content: space-between; /*  -Justify-content will adjust the space between the h1 and links in the header */
+  align-items: end; /* will adjust the links on the x axis */
+  padding: 10px;
+  padding-bottom: 50px;
+  background-image: url(./images/under-banner-background.jpeg);
+  height: 125px;
+  display: flex;
+}
+
+header ul li a {
+  color: var(--light1);
 }
 
 .header-links ul {
-    list-style: none; /* removes the bullet points of the links*/
-    margin: 0;
-    padding: 0;
-    display: flex; /*f lex, makes the links side by side instead of stacking*/
-    justify-content: flex-end;
-    font-family:sans-serif ;
-    font-size: 22px; /* sets the font size of the links in the header*/
+  list-style: none; /* removes the bullet points of the links*/
+  margin: 0;
+  padding: 0;
+  display: flex; /*flex, makes the links side by side instead of stacking*/
+  justify-content: flex-end;
+  font-family:sans-serif ;
+  font-size: 22px; /* ets the font size of the links in the header*/
 }
 
 .header-links li {
-    margin-left: 10px;  /* Will adjust the spacing between the links in the header.  */
+  margin-left: 10px;  /*Will adjust the spacing between the links in the header.  */
 }
 
 li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-.banner-under-header {
-    position: relative; /* Add this to allow for absolute positioning */
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-color: black;
-    height: 55px; /*Changes the size of the banner under the header*/
-    padding-right: 5%;  /*Will move the text on the banner under the headder away from the right side of the page  */
-    border-bottom: solid 40px white;
-    color: var(--light1);
-  }
-  
-
-
-/* _________________________________________ */
-
-
 h3{
-    margin:0;
-    color: var(--light1);
-  }
-  section{
-    display:flex;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-  section h3{
-    flex: 1 1;
-    padding:0 2rem;
-    font-size: 40px;
-    text-align:right;
-    min-width:max-content;
-    align-self:center;
-  }
-  .content{
-    flex: 2 1;
-    padding: 1%;
-    min-width:300px;
-    border-left: 4px solid rgb(14, 37, 94);
-  }
+  margin:0;
+  color: var(--light1);
+}
 
-  .content img {
-    height: 400px;
-    width: auto;
-  }
+h4 {
+  background-color: bisque;
+  width: 130px;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
 
-  .work-projects {
-    display: flex;
-    flex-wrap: wrap;
-  }
+section{
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
   
-  .project1 {
-    color:rgb(255, 0, 200);
-    background-image: url("./images/Cooking.jpeg");
-    border: solid 5px yellow;
-    height: 150px;
-    width: 97.3%
+section h3{
+  flex: 1 1;
+  padding:0 2rem;
+  font-size: 40px;
+  text-align:right;
+  min-width:max-content;
+  align-self:center;
+}
+ 
+.content{
+  flex: 2 1;
+  padding: 1%;
+  min-width:300px;
+  border-left: 4px solid rgb(14, 37, 94);
+}
+
+.content .avatar-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: auto;
+}
+
+  
+.project1 {
+  color:rgb(255, 0, 200);
+  background-image: url("./images/Cooking.jpeg");
+  border: solid 5px yellow;
+  height: 150px;
+  width: 97.3%
     
-  }
-  
+}
 
-  .project1:hover {
-    opacity: 50%;  /*make project one change opacity */
-    border: solid 5px red;
-  }
+.project2 {
+  background-image: url(./images/work1.jpg);
+}
 
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+.project3 {
+  background-image: url(./images/work2.jpg);
+}
 
-  .project2 {
-    background-image: url(./images/work1.jpg);
-  }
+.project4 {
+  background-image: url(./images/work3.jpg);
+}
 
-  .project3 {
-    background-image: url(./images/work2.jpg);
-  }
+.project5 {
+  background-image: url(./images/work4.jpg);
+}
 
-  .project4 {
-    background-image: url(./images/work3.jpg);
-  }
+.project2,
+.project3,
+.project4,
+.project5 {
+  color:rgb(255, 0, 200);
+  background-color: black;
+  border: solid 5px yellow;
+  height: 150px;
+  width: 48%;
+}
 
-  .project5 {
-    background-image: url(./images/work4.jpg);
-  }
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+ }
 
-  .project2,
-  .project3,
-  .project4,
-  .project5 {
-    color:rgb(255, 0, 200);
-    background-color: black;
-    border: solid 5px yellow;
-    height: 150px;
-    width: 48%;
-  }
+.project1:hover {
+  opacity: 50%;  /*make project one change opacity */
+ border: solid 5px red;
+}
 
-  .work-projects p {
-    color:yellow;
 
-  }
 
-  h4 {
-    background-color: bisque;
-    width: 130px;
-    font-size: 20px;
-    margin-bottom: -10px;
-  }
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+  opacity: 50%;  /*make project one change opacity */
+  border: solid 5px red;
+}
 
-  .project2:hover,
-  .project3:hover,
-  .project4:hover,
-  .project5:hover {
-    opacity: 50%;  /*make project one change opacity */
-    border: solid 5px red;
-  }
+.content a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blueviolet;
+  border-bottom: solid 3px black;
+  margin-right: 10%;
 
-  .content a {
-    text-decoration: none;
-    font-size: 20px;
-    color: blueviolet;
-    border-bottom: solid 3px black;
-    margin-right: 10%;
+}
 
-  }
+.work-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-projects p {
+  color:yellow;
+
+}
   
   
   /* Styles for screens smaller than 768px */
@@ -238,5 +239,6 @@ h3{
   
   }
 
+  
   
   
